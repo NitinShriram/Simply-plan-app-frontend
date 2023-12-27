@@ -1,0 +1,1 @@
+export const baseURL = 'https://simply-plan-app-backend.onrender.com'
