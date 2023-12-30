@@ -88,8 +88,8 @@ button:hover {
 }
 
 .toDo {
-  opacity: 0; /* Set initial opacity to 0 */
-  transform: translateY(20px); /* Move the element down initially */
+  opacity: 0;
+  transform: translateY(20px);
   background-color: #fff;
   padding: 15px 20px;
   border-radius: 8px;
@@ -97,8 +97,10 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  animation: fadeInUp 1s ease-out forwards; /* Adjusted duration */
+  animation: fadeInUp 0.5s ease-out forwards; /* Adjusted duration to 0.5s */
 }
+
+/* ... (remaining styles) */
 
 @keyframes fadeInUp {
   to {
