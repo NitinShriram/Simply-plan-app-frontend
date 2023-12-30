@@ -48,20 +48,15 @@ button {
   margin: 10px;
 }
 
-/* ... (previous styles) */
-
 .buttonsinpopup {
   display: flex;
-  gap: 10px; /* Adjust the gap value to control the space between buttons */
-  margin-top: 10px; /* Optional: Add top margin to the button group */
+  gap: 10px; 
+  margin-top: 10px; 
 }
 
 .buttonsinpopup button {
-  margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+  margin-bottom: 10px; 
 }
-
-/* ... (remaining styles) */
-
 
 .buttons button {
   margin-right: 10px;
@@ -97,10 +92,8 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  animation: fadeInUp 0.5s ease-out forwards; /* Adjusted duration to 0.5s */
+  animation: fadeInUp 0.5s ease-out forwards; 
 }
-
-/* ... (remaining styles) */
 
 @keyframes fadeInUp {
   to {
@@ -237,9 +230,22 @@ button:hover {
 
   .popup {
     padding: 10%;
-    width: 90%; /* Adjusted width for small screens */
-    height: 45%; /* Adjusted height for small screens */
-    max-height: none; /* No maximum height for small screens */
+    width: 90%;
+    height: auto;
+    max-height: none;
   }
-  
+
+  .popup__input_holder button {
+    width: 100%; 
+  }
+
+  .cross {
+    top: 5px;
+    right: 5px;
+  }
+
+  .popup h1 {
+    font-size: 1.5rem;
+  }
 }
+
