@@ -48,15 +48,20 @@ button {
   margin: 10px;
 }
 
+/* ... (previous styles) */
+
 .buttonsinpopup {
   display: flex;
-  gap: 10px; 
-  margin-top: 10px; 
+  gap: 10px; /* Adjust the gap value to control the space between buttons */
+  margin-top: 10px; /* Optional: Add top margin to the button group */
 }
 
 .buttonsinpopup button {
-  margin-bottom: 10px; 
+  margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
 }
+
+/* ... (remaining styles) */
+
 
 .buttons button {
   margin-right: 10px;
@@ -82,6 +87,8 @@ button:hover {
   gap: 15px;
 }
 
+/* ... (previous styles) */
+
 .toDo {
   opacity: 0;
   transform: translateY(20px);
@@ -92,8 +99,10 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  animation: fadeInUp 0.5s ease-out forwards; 
+  animation: fadeInUp 0.5s ease-out forwards; /* Adjusted duration to 0.5s */
 }
+
+/* ... (remaining styles) */
 
 @keyframes fadeInUp {
   to {
@@ -101,6 +110,9 @@ button:hover {
     transform: translateY(0);
   }
 }
+
+/* ... (remaining styles) */
+
 
 .toDo:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
@@ -229,13 +241,47 @@ button:hover {
   }
 
   .popup {
+    padding: 5%;
+    width: 100%;
+    height: auto;
+    max-height: none;
+  }
+
+  .popup__input_holder .buttons{
+    flex-direction: column;
+  }
+
+  .popup__input_holder button {
+    width: calc(50% - 5px); 
+    margin-bottom: 10px;
+  }
+
+  .cross {
+    top: 5px;
+    right: 5px;
+  }
+
+  .popup h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 600px) {
+  .input_holder,
+  .list,
+  .toDo {
+    width: 100%;
+  }
+
+  .popup {
     padding: 10%;
     width: 90%;
     height: auto;
     max-height: none;
   }
 
-  .popup__input_holder {
+  .popup__input_holder .buttons{
     flex-direction: column;
   }
 
@@ -254,3 +300,5 @@ button:hover {
     font-size: 1.5rem;
   }
 }
+
+
