@@ -235,8 +235,14 @@ button:hover {
     max-height: none;
   }
 
+  .popup__input_holder {
+    flex-direction: column;
+  }
+
   .popup__input_holder button {
-    width: 100%; 
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
   }
 
   .cross {
@@ -248,4 +254,3 @@ button:hover {
     font-size: 1.5rem;
   }
 }
-
